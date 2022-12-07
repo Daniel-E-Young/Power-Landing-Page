@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    height: 90px;
+    width: 100%;
+    align-items: center;
+    display: inline-block;
+}
+.logo{
+    width: 140px;
+    padding-top: 20px;
+    margin: 0 100px;
+    align-items: center;
+}
+nav ul{
+    float: right;
+    margin: 0 100px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: initial;
+}
+a.active,a:hover{
+    background: #706FE57e;
+    border-radius: 8px;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 35px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.column{
+    display: inline-block;
+    margin: 75px 100px;
+   width: 1300px
+}
+.col1{
+    display: inline-block;
+    margin-top: 60px;
+}
+.col2{
+    float: right;
+
+
+}
+.col2 img{
+    width: 33rem;
+    margin-top: -10px;
+    margin-right: -40px;
+}
+
+h1{
+    color:#1E1F4B;
+    font-size: 70px;
+    margin: 30px 0 10px;
+}
+.col1 p{
+    opacity: 70%;
+    font-size: 18px;
+}
+.watch{
+    margin: 35px 40px;
+    padding-top: 5px;
+}
+span{
+    color: #706FE5;
+}
+.video{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.col1 .watch p{
+    opacity: 70%;
+    font-size: 18px;
+}
+.btn{
+    padding: 12px 40px;
+    background-color: #706FE5;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    color: #ffffff;
+}
+.btn:hover{
+    background: rgb(2, 1, 59);
+    border-radius: 12px;
+    transition: .3s;
+}
+
+.video .watch{
+    display: inline-block;
+}
+.watch img{
+    width: 50px;
+    position: absolute;
+}
+.watch p{
+    color: #2E3E5C;
+    padding-left: 60px;
+}
+
+.brands{
+    margin: 100px auto;
+}
+.col-5{
+width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.col-5 img:hover{
+    transform: translateY(-50%);
+
+}
+
+h2{
+    color:#1E1F4B;
+    font-size: 20px;
+    text-align: center;
+}
+
+.small-container{
+    max-width: 1200px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 40px;
+      padding-left: 20px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 390px){
+    .checkbtn{
+      display: block;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #706FE57e;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #706FE57e;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    .logo{
+        width: 90px;
+        margin: 0 10px;
+    }
+    .column{
+        display: inline-block;
+        margin: 2px 10px;
+    }
+    h1{
+        color:#1E1F4B;
+        font-size: 50px;
+        margin: 15px 0 5px;
+    }
+    .col1{
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .col2{
+        float: center;
+        margin-left: 0px;
+    
+    }
+    .col2 img{
+        margin-top: 5px;
+        width: auto;
+    }
+    .brands{
+        margin: 15px auto;
+        max-width: 200px;
+    }
+    .small-container{
+        max-width: 600px;
+        margin: auto;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .col-5{
+    width: 60px;
+    }
+    section{
+        background-color:'white', no-repeat;
+        background-size: cover;
+        height: calc(100vh - 80px);
+      }
+  }
